@@ -6,11 +6,11 @@ class Calculator:
         return x * y
 
     def divide(self, x, y):
-            if y != 0:
-                return x / y
-            else:
-                raise ValueError("Cannot divide by zero.")
-        
+        if y != 0:
+            return x / y
+        else:
+            raise ValueError("Cannot divide by zero.")
+    
     def subtract(self, x, y):
-            result = x - y
-            return result
+        result = x - y
+        return result

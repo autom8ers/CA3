@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-from calculator import Calculator  
+from calculator import Calculator  # Assuming your Calculator class is in a separate file named calculator.py
 
 app = Flask(__name__)
 calculator = Calculator()
@@ -26,8 +26,6 @@ def divide(x, y):
 def subtract(x, y):
     result = calculator.subtract(x, y)
     return jsonify({'operation': 'subtract', 'result': result})
-
-
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
