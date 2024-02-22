@@ -28,6 +28,6 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build -t automaters/ca3:latest .
-        echo Hasan2002$ | docker login -u automaters --password-stdin
-        docker push automaters/ca3:latest
+        docker build -t autom8ers/ca3:latest .
+        echo Salis2002$ | docker login -u autom8ers --password-stdin
+        docker push autom8ers/ca3:latest
